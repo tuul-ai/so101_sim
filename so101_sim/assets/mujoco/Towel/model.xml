@@ -1,0 +1,1825 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<mujoco model="Towel_scene">
+  <compiler angle="radian" meshdir="meshes/" texturedir="materials/textures/"/>
+
+  <worldbody>
+    <body name="towel_0" pos="-0.15 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_1" pos="-0.15 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_2" pos="-0.15 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_3" pos="-0.15 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_4" pos="-0.15 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_5" pos="-0.15 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_6" pos="-0.15 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_7" pos="-0.15 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_8" pos="-0.15 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_9" pos="-0.15 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_10" pos="-0.15 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_11" pos="-0.15 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_12" pos="-0.15 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_13" pos="-0.15 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_14" pos="-0.15 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_15" pos="-0.15 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_16" pos="-0.13 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_17" pos="-0.13 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_18" pos="-0.13 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_19" pos="-0.13 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_20" pos="-0.13 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_21" pos="-0.13 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_22" pos="-0.13 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_23" pos="-0.13 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_24" pos="-0.13 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_25" pos="-0.13 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_26" pos="-0.13 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_27" pos="-0.13 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_28" pos="-0.13 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_29" pos="-0.13 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_30" pos="-0.13 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_31" pos="-0.13 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_32" pos="-0.11 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_33" pos="-0.11 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_34" pos="-0.11 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_35" pos="-0.11 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_36" pos="-0.11 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_37" pos="-0.11 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_38" pos="-0.11 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_39" pos="-0.11 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_40" pos="-0.11 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_41" pos="-0.11 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_42" pos="-0.11 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_43" pos="-0.11 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_44" pos="-0.11 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_45" pos="-0.11 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_46" pos="-0.11 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_47" pos="-0.11 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_48" pos="-0.09 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_49" pos="-0.09 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_50" pos="-0.09 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_51" pos="-0.09 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_52" pos="-0.09 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_53" pos="-0.09 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_54" pos="-0.09 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_55" pos="-0.09 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_56" pos="-0.09 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_57" pos="-0.09 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_58" pos="-0.09 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_59" pos="-0.09 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_60" pos="-0.09 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_61" pos="-0.09 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_62" pos="-0.09 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_63" pos="-0.09 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_64" pos="-0.07 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_65" pos="-0.07 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_66" pos="-0.07 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_67" pos="-0.07 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_68" pos="-0.07 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_69" pos="-0.07 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_70" pos="-0.07 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_71" pos="-0.07 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_72" pos="-0.07 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_73" pos="-0.07 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_74" pos="-0.07 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_75" pos="-0.07 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_76" pos="-0.07 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_77" pos="-0.07 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_78" pos="-0.07 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_79" pos="-0.07 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_80" pos="-0.05 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_81" pos="-0.05 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_82" pos="-0.05 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_83" pos="-0.05 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_84" pos="-0.05 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_85" pos="-0.05 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_86" pos="-0.05 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_87" pos="-0.05 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_88" pos="-0.05 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_89" pos="-0.05 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_90" pos="-0.05 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_91" pos="-0.05 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_92" pos="-0.05 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_93" pos="-0.05 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_94" pos="-0.05 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_95" pos="-0.05 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_96" pos="-0.03 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_97" pos="-0.03 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_98" pos="-0.03 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_99" pos="-0.03 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_100" pos="-0.03 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_101" pos="-0.03 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_102" pos="-0.03 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_103" pos="-0.03 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_104" pos="-0.03 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_105" pos="-0.03 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_106" pos="-0.03 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_107" pos="-0.03 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_108" pos="-0.03 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_109" pos="-0.03 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_110" pos="-0.03 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_111" pos="-0.03 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_112" pos="-0.01 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_113" pos="-0.01 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_114" pos="-0.01 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_115" pos="-0.01 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_116" pos="-0.01 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_117" pos="-0.01 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_118" pos="-0.01 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_119" pos="-0.01 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_120" pos="-0.01 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_121" pos="-0.01 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_122" pos="-0.01 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_123" pos="-0.01 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_124" pos="-0.01 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_125" pos="-0.01 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_126" pos="-0.01 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_127" pos="-0.01 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_128" pos="0.01 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_129" pos="0.01 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_130" pos="0.01 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_131" pos="0.01 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_132" pos="0.01 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_133" pos="0.01 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_134" pos="0.01 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_135" pos="0.01 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_136" pos="0.01 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_137" pos="0.01 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_138" pos="0.01 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_139" pos="0.01 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_140" pos="0.01 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_141" pos="0.01 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_142" pos="0.01 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_143" pos="0.01 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_144" pos="0.03 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_145" pos="0.03 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_146" pos="0.03 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_147" pos="0.03 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_148" pos="0.03 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_149" pos="0.03 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_150" pos="0.03 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_151" pos="0.03 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_152" pos="0.03 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_153" pos="0.03 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_154" pos="0.03 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_155" pos="0.03 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_156" pos="0.03 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_157" pos="0.03 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_158" pos="0.03 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_159" pos="0.03 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_160" pos="0.05 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_161" pos="0.05 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_162" pos="0.05 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_163" pos="0.05 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_164" pos="0.05 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_165" pos="0.05 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_166" pos="0.05 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_167" pos="0.05 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_168" pos="0.05 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_169" pos="0.05 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_170" pos="0.05 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_171" pos="0.05 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_172" pos="0.05 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_173" pos="0.05 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_174" pos="0.05 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_175" pos="0.05 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_176" pos="0.07 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_177" pos="0.07 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_178" pos="0.07 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_179" pos="0.07 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_180" pos="0.07 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_181" pos="0.07 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_182" pos="0.07 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_183" pos="0.07 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_184" pos="0.07 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_185" pos="0.07 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_186" pos="0.07 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_187" pos="0.07 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_188" pos="0.07 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_189" pos="0.07 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_190" pos="0.07 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_191" pos="0.07 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_192" pos="0.09 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_193" pos="0.09 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_194" pos="0.09 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_195" pos="0.09 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_196" pos="0.09 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_197" pos="0.09 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_198" pos="0.09 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_199" pos="0.09 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_200" pos="0.09 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_201" pos="0.09 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_202" pos="0.09 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_203" pos="0.09 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_204" pos="0.09 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_205" pos="0.09 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_206" pos="0.09 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_207" pos="0.09 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_208" pos="0.11 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_209" pos="0.11 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_210" pos="0.11 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_211" pos="0.11 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_212" pos="0.11 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_213" pos="0.11 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_214" pos="0.11 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_215" pos="0.11 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_216" pos="0.11 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_217" pos="0.11 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_218" pos="0.11 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_219" pos="0.11 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_220" pos="0.11 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_221" pos="0.11 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_222" pos="0.11 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_223" pos="0.11 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_224" pos="0.13 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_225" pos="0.13 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_226" pos="0.13 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_227" pos="0.13 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_228" pos="0.13 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_229" pos="0.13 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_230" pos="0.13 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_231" pos="0.13 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_232" pos="0.13 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_233" pos="0.13 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_234" pos="0.13 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_235" pos="0.13 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_236" pos="0.13 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_237" pos="0.13 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_238" pos="0.13 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_239" pos="0.13 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_240" pos="0.15 -0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_241" pos="0.15 -0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_242" pos="0.15 -0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_243" pos="0.15 -0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_244" pos="0.15 -0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_245" pos="0.15 -0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_246" pos="0.15 -0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_247" pos="0.15 -0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_248" pos="0.15 0.01 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_249" pos="0.15 0.03 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_250" pos="0.15 0.05 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_251" pos="0.15 0.07 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_252" pos="0.15 0.09 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_253" pos="0.15 0.11 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_254" pos="0.15 0.13 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+    <body name="towel_255" pos="0.15 0.15 0">
+      <inertial pos="0 0 0" mass="0.00390625" diaginertia="6.51042e-08 6.51042e-08 6.51042e-08"/>
+      <joint pos="0 0 0" axis="1 0 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 1 0" type="slide"/>
+      <joint pos="0 0 0" axis="0 0 1" type="slide"/>
+      <geom size="0.01" group="4"/>
+    </body>
+  </worldbody>
+
+  <deformable>
+    <flex name="towel" dim="2" radius="0.01" rgba="1 0.5 0.5 1" body="Towel_scene/towel_0 Towel_scene/towel_1 Towel_scene/towel_2 Towel_scene/towel_3 Towel_scene/towel_4 Towel_scene/towel_5 Towel_scene/towel_6 Towel_scene/towel_7 Towel_scene/towel_8 Towel_scene/towel_9 Towel_scene/towel_10 Towel_scene/towel_11 Towel_scene/towel_12 Towel_scene/towel_13 Towel_scene/towel_14 Towel_scene/towel_15 Towel_scene/towel_16 Towel_scene/towel_17 Towel_scene/towel_18 Towel_scene/towel_19 Towel_scene/towel_20 Towel_scene/towel_21 Towel_scene/towel_22 Towel_scene/towel_23 Towel_scene/towel_24 Towel_scene/towel_25 Towel_scene/towel_26 Towel_scene/towel_27 Towel_scene/towel_28 Towel_scene/towel_29 Towel_scene/towel_30 Towel_scene/towel_31 Towel_scene/towel_32 Towel_scene/towel_33 Towel_scene/towel_34 Towel_scene/towel_35 Towel_scene/towel_36 Towel_scene/towel_37 Towel_scene/towel_38 Towel_scene/towel_39 Towel_scene/towel_40 Towel_scene/towel_41 Towel_scene/towel_42 Towel_scene/towel_43 Towel_scene/towel_44 Towel_scene/towel_45 Towel_scene/towel_46 Towel_scene/towel_47 Towel_scene/towel_48 Towel_scene/towel_49 Towel_scene/towel_50 Towel_scene/towel_51 Towel_scene/towel_52 Towel_scene/towel_53 Towel_scene/towel_54 Towel_scene/towel_55 Towel_scene/towel_56 Towel_scene/towel_57 Towel_scene/towel_58 Towel_scene/towel_59 Towel_scene/towel_60 Towel_scene/towel_61 Towel_scene/towel_62 Towel_scene/towel_63 Towel_scene/towel_64 Towel_scene/towel_65 Towel_scene/towel_66 Towel_scene/towel_67 Towel_scene/towel_68 Towel_scene/towel_69 Towel_scene/towel_70 Towel_scene/towel_71 Towel_scene/towel_72 Towel_scene/towel_73 Towel_scene/towel_74 Towel_scene/towel_75 Towel_scene/towel_76 Towel_scene/towel_77 Towel_scene/towel_78 Towel_scene/towel_79 Towel_scene/towel_80 Towel_scene/towel_81 Towel_scene/towel_82 Towel_scene/towel_83 Towel_scene/towel_84 Towel_scene/towel_85 Towel_scene/towel_86 Towel_scene/towel_87 Towel_scene/towel_88 Towel_scene/towel_89 Towel_scene/towel_90 Towel_scene/towel_91 Towel_scene/towel_92 Towel_scene/towel_93 Towel_scene/towel_94 Towel_scene/towel_95 Towel_scene/towel_96 Towel_scene/towel_97 Towel_scene/towel_98 Towel_scene/towel_99 Towel_scene/towel_100 Towel_scene/towel_101 Towel_scene/towel_102 Towel_scene/towel_103 Towel_scene/towel_104 Towel_scene/towel_105 Towel_scene/towel_106 Towel_scene/towel_107 Towel_scene/towel_108 Towel_scene/towel_109 Towel_scene/towel_110 Towel_scene/towel_111 Towel_scene/towel_112 Towel_scene/towel_113 Towel_scene/towel_114 Towel_scene/towel_115 Towel_scene/towel_116 Towel_scene/towel_117 Towel_scene/towel_118 Towel_scene/towel_119 Towel_scene/towel_120 Towel_scene/towel_121 Towel_scene/towel_122 Towel_scene/towel_123 Towel_scene/towel_124 Towel_scene/towel_125 Towel_scene/towel_126 Towel_scene/towel_127 Towel_scene/towel_128 Towel_scene/towel_129 Towel_scene/towel_130 Towel_scene/towel_131 Towel_scene/towel_132 Towel_scene/towel_133 Towel_scene/towel_134 Towel_scene/towel_135 Towel_scene/towel_136 Towel_scene/towel_137 Towel_scene/towel_138 Towel_scene/towel_139 Towel_scene/towel_140 Towel_scene/towel_141 Towel_scene/towel_142 Towel_scene/towel_143 Towel_scene/towel_144 Towel_scene/towel_145 Towel_scene/towel_146 Towel_scene/towel_147 Towel_scene/towel_148 Towel_scene/towel_149 Towel_scene/towel_150 Towel_scene/towel_151 Towel_scene/towel_152 Towel_scene/towel_153 Towel_scene/towel_154 Towel_scene/towel_155 Towel_scene/towel_156 Towel_scene/towel_157 Towel_scene/towel_158 Towel_scene/towel_159 Towel_scene/towel_160 Towel_scene/towel_161 Towel_scene/towel_162 Towel_scene/towel_163 Towel_scene/towel_164 Towel_scene/towel_165 Towel_scene/towel_166 Towel_scene/towel_167 Towel_scene/towel_168 Towel_scene/towel_169 Towel_scene/towel_170 Towel_scene/towel_171 Towel_scene/towel_172 Towel_scene/towel_173 Towel_scene/towel_174 Towel_scene/towel_175 Towel_scene/towel_176 Towel_scene/towel_177 Towel_scene/towel_178 Towel_scene/towel_179 Towel_scene/towel_180 Towel_scene/towel_181 Towel_scene/towel_182 Towel_scene/towel_183 Towel_scene/towel_184 Towel_scene/towel_185 Towel_scene/towel_186 Towel_scene/towel_187 Towel_scene/towel_188 Towel_scene/towel_189 Towel_scene/towel_190 Towel_scene/towel_191 Towel_scene/towel_192 Towel_scene/towel_193 Towel_scene/towel_194 Towel_scene/towel_195 Towel_scene/towel_196 Towel_scene/towel_197 Towel_scene/towel_198 Towel_scene/towel_199 Towel_scene/towel_200 Towel_scene/towel_201 Towel_scene/towel_202 Towel_scene/towel_203 Towel_scene/towel_204 Towel_scene/towel_205 Towel_scene/towel_206 Towel_scene/towel_207 Towel_scene/towel_208 Towel_scene/towel_209 Towel_scene/towel_210 Towel_scene/towel_211 Towel_scene/towel_212 Towel_scene/towel_213 Towel_scene/towel_214 Towel_scene/towel_215 Towel_scene/towel_216 Towel_scene/towel_217 Towel_scene/towel_218 Towel_scene/towel_219 Towel_scene/towel_220 Towel_scene/towel_221 Towel_scene/towel_222 Towel_scene/towel_223 Towel_scene/towel_224 Towel_scene/towel_225 Towel_scene/towel_226 Towel_scene/towel_227 Towel_scene/towel_228 Towel_scene/towel_229 Towel_scene/towel_230 Towel_scene/towel_231 Towel_scene/towel_232 Towel_scene/towel_233 Towel_scene/towel_234 Towel_scene/towel_235 Towel_scene/towel_236 Towel_scene/towel_237 Towel_scene/towel_238 Towel_scene/towel_239 Towel_scene/towel_240 Towel_scene/towel_241 Towel_scene/towel_242 Towel_scene/towel_243 Towel_scene/towel_244 Towel_scene/towel_245 Towel_scene/towel_246 Towel_scene/towel_247 Towel_scene/towel_248 Towel_scene/towel_249 Towel_scene/towel_250 Towel_scene/towel_251 Towel_scene/towel_252 Towel_scene/towel_253 Towel_scene/towel_254 Towel_scene/towel_255" element="0 16 17 0 17 1 1 17 18 1 18 2 2 18 19 2 19 3 3 19 20 3 20 4 4 20 21 4 21 5 5 21 22 5 22 6 6 22 23 6 23 7 7 23 24 7 24 8 8 24 25 8 25 9 9 25 26 9 26 10 10 26 27 10 27 11 11 27 28 11 28 12 12 28 29 12 29 13 13 29 30 13 30 14 14 30 31 14 31 15 16 32 33 16 33 17 17 33 34 17 34 18 18 34 35 18 35 19 19 35 36 19 36 20 20 36 37 20 37 21 21 37 38 21 38 22 22 38 39 22 39 23 23 39 40 23 40 24 24 40 41 24 41 25 25 41 42 25 42 26 26 42 43 26 43 27 27 43 44 27 44 28 28 44 45 28 45 29 29 45 46 29 46 30 30 46 47 30 47 31 32 48 49 32 49 33 33 49 50 33 50 34 34 50 51 34 51 35 35 51 52 35 52 36 36 52 53 36 53 37 37 53 54 37 54 38 38 54 55 38 55 39 39 55 56 39 56 40 40 56 57 40 57 41 41 57 58 41 58 42 42 58 59 42 59 43 43 59 60 43 60 44 44 60 61 44 61 45 45 61 62 45 62 46 46 62 63 46 63 47 48 64 65 48 65 49 49 65 66 49 66 50 50 66 67 50 67 51 51 67 68 51 68 52 52 68 69 52 69 53 53 69 70 53 70 54 54 70 71 54 71 55 55 71 72 55 72 56 56 72 73 56 73 57 57 73 74 57 74 58 58 74 75 58 75 59 59 75 76 59 76 60 60 76 77 60 77 61 61 77 78 61 78 62 62 78 79 62 79 63 64 80 81 64 81 65 65 81 82 65 82 66 66 82 83 66 83 67 67 83 84 67 84 68 68 84 85 68 85 69 69 85 86 69 86 70 70 86 87 70 87 71 71 87 88 71 88 72 72 88 89 72 89 73 73 89 90 73 90 74 74 90 91 74 91 75 75 91 92 75 92 76 76 92 93 76 93 77 77 93 94 77 94 78 78 94 95 78 95 79 80 96 97 80 97 81 81 97 98 81 98 82 82 98 99 82 99 83 83 99 100 83 100 84 84 100 101 84 101 85 85 101 102 85 102 86 86 102 103 86 103 87 87 103 104 87 104 88 88 104 105 88 105 89 89 105 106 89 106 90 90 106 107 90 107 91 91 107 108 91 108 92 92 108 109 92 109 93 93 109 110 93 110 94 94 110 111 94 111 95 96 112 113 96 113 97 97 113 114 97 114 98 98 114 115 98 115 99 99 115 116 99 116 100 100 116 117 100 117 101 101 117 118 101 118 102 102 118 119 102 119 103 103 119 120 103 120 104 104 120 121 104 121 105 105 121 122 105 122 106 106 122 123 106 123 107 107 123 124 107 124 108 108 124 125 108 125 109 109 125 126 109 126 110 110 126 127 110 127 111 112 128 129 112 129 113 113 129 130 113 130 114 114 130 131 114 131 115 115 131 132 115 132 116 116 132 133 116 133 117 117 133 134 117 134 118 118 134 135 118 135 119 119 135 136 119 136 120 120 136 137 120 137 121 121 137 138 121 138 122 122 138 139 122 139 123 123 139 140 123 140 124 124 140 141 124 141 125 125 141 142 125 142 126 126 142 143 126 143 127 128 144 145 128 145 129 129 145 146 129 146 130 130 146 147 130 147 131 131 147 148 131 148 132 132 148 149 132 149 133 133 149 150 133 150 134 134 150 151 134 151 135 135 151 152 135 152 136 136 152 153 136 153 137 137 153 154 137 154 138 138 154 155 138 155 139 139 155 156 139 156 140 140 156 157 140 157 141 141 157 158 141 158 142 142 158 159 142 159 143 144 160 161 144 161 145 145 161 162 145 162 146 146 162 163 146 163 147 147 163 164 147 164 148 148 164 165 148 165 149 149 165 166 149 166 150 150 166 167 150 167 151 151 167 168 151 168 152 152 168 169 152 169 153 153 169 170 153 170 154 154 170 171 154 171 155 155 171 172 155 172 156 156 172 173 156 173 157 157 173 174 157 174 158 158 174 175 158 175 159 160 176 177 160 177 161 161 177 178 161 178 162 162 178 179 162 179 163 163 179 180 163 180 164 164 180 181 164 181 165 165 181 182 165 182 166 166 182 183 166 183 167 167 183 184 167 184 168 168 184 185 168 185 169 169 185 186 169 186 170 170 186 187 170 187 171 171 187 188 171 188 172 172 188 189 172 189 173 173 189 190 173 190 174 174 190 191 174 191 175 176 192 193 176 193 177 177 193 194 177 194 178 178 194 195 178 195 179 179 195 196 179 196 180 180 196 197 180 197 181 181 197 198 181 198 182 182 198 199 182 199 183 183 199 200 183 200 184 184 200 201 184 201 185 185 201 202 185 202 186 186 202 203 186 203 187 187 203 204 187 204 188 188 204 205 188 205 189 189 205 206 189 206 190 190 206 207 190 207 191 192 208 209 192 209 193 193 209 210 193 210 194 194 210 211 194 211 195 195 211 212 195 212 196 196 212 213 196 213 197 197 213 214 197 214 198 198 214 215 198 215 199 199 215 216 199 216 200 200 216 217 200 217 201 201 217 218 201 218 202 202 218 219 202 219 203 203 219 220 203 220 204 204 220 221 204 221 205 205 221 222 205 222 206 206 222 223 206 223 207 208 224 225 208 225 209 209 225 226 209 226 210 210 226 227 210 227 211 211 227 228 211 228 212 212 228 229 212 229 213 213 229 230 213 230 214 214 230 231 214 231 215 215 231 232 215 232 216 216 232 233 216 233 217 217 233 234 217 234 218 218 234 235 218 235 219 219 235 236 219 236 220 220 236 237 220 237 221 221 237 238 221 238 222 222 238 239 222 239 223 224 240 241 224 241 225 225 241 242 225 242 226 226 242 243 226 243 227 227 243 244 227 244 228 228 244 245 228 245 229 229 245 246 229 246 230 230 246 247 230 247 231 231 247 248 231 248 232 232 248 249 232 249 233 233 249 250 233 250 234 234 250 251 234 251 235 235 251 252 235 252 236 236 252 253 236 253 237 237 253 254 237 254 238 238 254 255 238 255 239">
+      <contact contype="0" conaffinity="0" friction="1 1 0.0001" solimp="0.99 0.999 1e-05 0.5 2"/>
+      <elasticity young="6e1" poisson="0.1" thickness="2e-2" elastic2d="bend"/>
+    </flex>
+  </deformable>
+
+  <equality>
+    <flex flex="towel" solref="0.002 5"/>
+  </equality>
+</mujoco>

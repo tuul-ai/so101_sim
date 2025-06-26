@@ -1,0 +1,90 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+<mujoco model="laptop_final_hinge_origin_clarified_door_example">
+    <compiler assetdir="meshes" texturedir="materials" angle="radian" inertiafromgeom="true" boundinertia="1e-06"/>
+    <option noslip_iterations="2"/>
+    <asset>
+        <texture type="2d" name="laptop_texture" file="4k_textures/laptop_4k_BaseColor.png"/>
+        <material name="laptop_material" texture="laptop_texture"/>
+        <mesh file="laptop_body.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_001.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_002.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_003.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_004.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_005.obj" scale="1 1 1"/>
+        <mesh file="laptop_body_collision_006.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_007.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_008.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_009.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_010.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_011.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_012.obj" scale="1 1 1"/>
+        <mesh file="laptop_screen_collision_013.obj" scale="1 1 1"/>
+    </asset>
+    <default>
+        <default class="laptop_screen">
+            <default class="visual_laptop_screen">
+                <geom type="mesh" group="2" contype="0" conaffinity="0" material="laptop_material"/>
+            </default>
+            <default class="collision_laptop_screen">
+                <geom type="mesh" group="3" mass="0.1" solref=".004 1" friction="5.0 0.05 0.05" condim="6" solimp="2 2 0.01"/>
+            </default>
+        </default>
+    </default>
+    <default>
+        <default class="laptop_body">
+            <default class="visual_laptop_body">
+                <geom type="mesh" group="2" contype="0" conaffinity="0" material="laptop_material"/>
+            </default>
+            <default class="collision_laptop_body">
+                <geom type="mesh" group="3" mass="1.3" solref=".004 1" friction="5.0 0.05 0.05" condim="6" solimp="5 2 0.01"/>
+            </default>
+        </default>
+    </default>
+    <worldbody>
+        <body name="base_joint"> <freejoint/>
+            <body name="laptop_body" pos="0 0 0.015" euler="-80 0 0">
+                <geom class="visual_laptop_body" mesh="laptop_body" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_001" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_002" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_003" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_004" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_005" euler="0 0 0"/>
+                <geom class="collision_laptop_body" mesh="laptop_body_collision_006" euler="0 0 0"/>
+                <body name="laptop_screen" pos="0 0 0">
+                    <joint name="screen_hinge" pos="0 0.006941 -0.107527" axis="1 0 0" range="-1.83469 0.00051239" frictionloss="1.5" solimplimit="1 2 0.01" solreflimit="0.0075 1" damping="0.2" armature="0.001"/>
+                    <geom class="visual_laptop_screen" mesh="laptop_screen" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_007" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_008" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_009" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_010" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_011" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_012" euler="0 0 0"/>
+                    <geom class="collision_laptop_screen" mesh="laptop_screen_collision_013" euler="0 0 0"/>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <contact>
+        <exclude body1="laptop_body" body2="laptop_screen"/>
+    </contact>
+    <option timestep="0.002" gravity="0 0 -9.81"/>
+</mujoco>

@@ -1,0 +1,57 @@
+<!--
+Real SO100 Scene - Using actual SO-ARM100 meshes
+-->
+
+<mujoco model="real_so100_scene">
+  <compiler angle="radian" autolimits="true" meshdir="/Users/shreyas/.cache/robot_descriptions/mujoco_menagerie/trs_so_arm100"/>
+  
+  <option cone="elliptic" impratio="10" timestep="0.002"/>
+  
+  <asset>
+    <!-- Scene materials -->
+    <material name="table_material" rgba="0.8 0.6 0.4 1.0"/>
+    <material name="floor_material" rgba="0.3 0.3 0.3 1.0"/>
+  </asset>
+  
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global offwidth="640" offheight="480"/>
+  </visual>
+  
+  <worldbody>
+    <!-- Lighting -->
+    <light name="top_light" pos="0 0 2" dir="0 0 -1" diffuse="0.8 0.8 0.8" ambient="0.2 0.2 0.2"/>
+    <light name="side_light1" pos="1 1 1.5" dir="-1 -1 -1" diffuse="0.4 0.4 0.4"/>
+    <light name="side_light2" pos="-1 1 1.5" dir="1 -1 -1" diffuse="0.4 0.4 0.4"/>
+    
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="3 3 0.1" material="floor_material" friction="1 0.005 0.0001"/>
+    
+    <!-- Table -->
+    <body name="table" pos="0 0 0.4">
+      <geom name="table_top" type="box" size="0.5 0.4 0.02" pos="0 0 0" material="table_material"/>
+      <!-- Table legs -->
+      <geom name="leg1" type="cylinder" size="0.02 0.2" pos="0.45 0.35 -0.2" material="table_material"/>
+      <geom name="leg2" type="cylinder" size="0.02 0.2" pos="0.45 -0.35 -0.2" material="table_material"/>
+      <geom name="leg3" type="cylinder" size="0.02 0.2" pos="-0.45 0.35 -0.2" material="table_material"/>
+      <geom name="leg4" type="cylinder" size="0.02 0.2" pos="-0.45 -0.35 -0.2" material="table_material"/>
+    </body>
+    
+    <!-- Cameras -->
+    <camera name="overhead_cam" pos="0 0 1.5" xyaxes="1 0 0 0 1 0" fovy="45"/>
+    <camera name="worms_eye_cam" pos="0 0 0.1" xyaxes="1 0 0 0 0 1" fovy="45"/>
+    <camera name="side_cam" pos="1.2 0.8 0.8" xyaxes="-0.8 0.6 0 -0.36 -0.48 0.8" fovy="45"/>
+    
+    <!-- Include the real SO-ARM100 robot -->
+    <include file="/Users/shreyas/.cache/robot_descriptions/mujoco_menagerie/trs_so_arm100/so_arm100.xml"/>
+    
+    <!-- Mount the robot on the table -->
+    <weld body1="table" body2="Base" anchor="0 0 0.02"/>
+  </worldbody>
+
+  <!-- Add keyframe for home position -->
+  <keyframe>
+    <key name="home" qpos="0 -0.5 1.0 -0.5 0.0 0.02"/>
+  </keyframe>
+</mujoco>

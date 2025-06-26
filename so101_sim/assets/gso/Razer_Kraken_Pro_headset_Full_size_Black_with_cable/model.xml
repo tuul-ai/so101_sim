@@ -1,0 +1,261 @@
+<!--
+Copyright 2022 Google LLC
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+    Share: Copy and redistribute the material in any medium or format.
+    Adapt: Remix, transform, and build upon the material for any purpose,
+          even commercially.
+
+Under the following terms:
+    Attribution: You must give appropriate credit, provide a link to the license,
+                  and indicate if changes were made. You may do so in any reasonable
+                  manner, but not in any way that suggests the licensor endorses you or
+                  your use.
+
+No additional restrictions: You may not apply legal terms or technological measures
+                            that legally restrict others from doing anything the
+                            license permits.
+-->
+
+<mujoco model="Razer_Kraken_Pro_headset_Full_size_Black">
+
+  <compiler assetdir="meshes" texturedir="materials/textures"/>
+
+  <extension>
+    <plugin plugin="mujoco.elasticity.cable">
+      <instance name="composite">
+        <config key="twist" value="1e2"/>
+        <config key="bend" value="4e1"/>
+      </instance>
+    </plugin>
+  </extension>
+
+  <custom>
+    <text name="composite_" data="rope_"/>
+  </custom>
+
+  <asset>
+    <texture type="2d" name="texture" file="texture.png"/>
+    <material name="texture" texture="texture"/>
+
+    <mesh file="model.obj"/>
+    <mesh file="coacd_part_003.obj"/>
+    <mesh file="coacd_part_004.obj"/>
+    <mesh file="coacd_part_007.obj"/>
+    <mesh file="coacd_part_008.obj"/>
+    <mesh file="coacd_part_010.obj"/>
+    <mesh file="coacd_part_011.obj"/>
+    <mesh file="coacd_part_012.obj"/>
+    <mesh file="coacd_part_014.obj"/>
+    <mesh file="coacd_part_015.obj"/>
+    <mesh file="coacd_part_016.obj"/>
+    <mesh file="coacd_part_017.obj"/>
+    <mesh file="coacd_part_018.obj"/>
+    <mesh file="coacd_part_019.obj"/>
+    <mesh file="coacd_part_020.obj"/>
+    <mesh file="coacd_part_021.obj"/>
+    <mesh file="coacd_part_022.obj"/>
+    <mesh file="coacd_part_023.obj"/>
+    <mesh file="coacd_part_024.obj"/>
+    <mesh file="coacd_part_025.obj"/>
+    <mesh file="coacd_part_026.obj"/>
+    <mesh file="coacd_part_027.obj"/>
+    <mesh file="coacd_part_028.obj"/>
+    <mesh file="coacd_part_029.obj"/>
+    <mesh file="coacd_part_030.obj"/>
+    <mesh file="coacd_part_031.obj"/>
+    <mesh file="coacd_part_032.obj"/>
+    <mesh file="coacd_part_033.obj"/>
+    <mesh file="coacd_part_034.obj"/>
+    <mesh file="coacd_part_035.obj"/>
+    <mesh file="coacd_part_036.obj"/>
+    <mesh file="coacd_part_037.obj"/>
+    <mesh file="coacd_part_038.obj"/>
+    <mesh file="coacd_part_039.obj"/>
+    <mesh file="coacd_part_040.obj"/>
+    <mesh file="coacd_part_041.obj"/>
+    <mesh file="coacd_part_042.obj"/>
+    <mesh file="coacd_part_043.obj"/>
+  </asset>
+
+  <default>
+    <default class="Razer_Kraken_Pro_headset_Full_size_Black">
+      <default class="visual_Razer_Kraken_Pro_headset_Full_size_Black">
+        <geom type="mesh" group="2" density="200" contype="0" conaffinity="0" material="texture"/>
+      </default>
+      <default class="collision_Razer_Kraken_Pro_headset_Full_size_Black">
+        <geom type="mesh" group="3" mass="0.0" density="0" solref=".004 1" friction="1.0 0.01 0.01" condim="6"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body name="headphone_body" childclass="Razer_Kraken_Pro_headset_Full_size_Black" pos="0 0 0.3" euler="-90 0 0">
+      <freejoint/>
+      <body name="headphone" childclass="Razer_Kraken_Pro_headset_Full_size_Black" pos="0 0 0" euler="0 0 0">
+        <geom class="visual_Razer_Kraken_Pro_headset_Full_size_Black" mesh="model"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_003" rgba="0.708 0.02 0.97 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_004" rgba="0.832 0.21 0.18 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_007" rgba="0.139 0.29 0.37 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_008" rgba="0.456 0.79 0.20 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_010" rgba="0.608 0.17 0.07 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_011" rgba="0.949 0.97 0.81 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_012" rgba="0.305 0.10 0.68 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_014" rgba="0.034 0.91 0.26 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_015" rgba="0.663 0.31 0.52 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_016" rgba="0.547 0.18 0.97 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_017" rgba="0.775 0.94 0.89 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_018" rgba="0.598 0.92 0.09 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_019" rgba="0.196 0.05 0.33 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_020" rgba="0.389 0.27 0.83 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_021" rgba="0.357 0.28 0.54 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_022" rgba="0.141 0.80 0.07 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_023" rgba="0.987 0.77 0.20 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_024" rgba="0.006 0.82 0.71 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_025" rgba="0.729 0.77 0.07 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_026" rgba="0.358 0.12 0.86 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_027" rgba="0.623 0.33 0.06 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_028" rgba="0.311 0.33 0.73 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_029" rgba="0.638 0.89 0.47 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_030" rgba="0.120 0.71 0.76 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_031" rgba="0.561 0.77 0.49 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_032" rgba="0.523 0.43 0.03 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_033" rgba="0.108 0.03 0.64 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_034" rgba="0.314 0.51 0.91 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_035" rgba="0.249 0.41 0.76 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_036" rgba="0.229 0.08 0.29 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_037" rgba="0.161 0.93 0.81 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_038" rgba="0.633 0.87 0.80 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_039" rgba="0.187 0.89 0.54 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_040" rgba="0.807 0.90 0.32 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_041" rgba="0.110 0.23 0.43 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_042" rgba="0.818 0.86 0.01 1"/>
+        <geom class="collision_Razer_Kraken_Pro_headset_Full_size_Black" mesh="coacd_part_043" rgba="0.511 0.42 0.22 1"/>
+      </body>
+
+      <body name="cable_body" pos="0 0 0.3">
+        <body name="B_first" pos="0.015 -0.02 -0.2" quat="0 -0.707107 0 0.707107">
+          <joint name="J_first" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+          <geom name="G0" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+          <site name="S_first" pos="0 0 0" group="3"/>
+          <plugin instance="composite"/>
+          <body name="B_1" pos="0.0394737 0 0">
+            <joint name="J_1" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+            <geom name="G1" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+            <plugin instance="composite"/>
+            <body name="B_2" pos="0.0394737 0 0">
+              <joint name="J_2" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+              <geom name="G2" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+              <plugin instance="composite"/>
+              <body name="B_3" pos="0.0394737 0 0">
+                <joint name="J_3" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                <geom name="G3" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                <plugin instance="composite"/>
+                <body name="B_4" pos="0.0394737 0 0">
+                  <joint name="J_4" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                  <geom name="G4" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                  <plugin instance="composite"/>
+                  <body name="B_5" pos="0.0394737 0 0">
+                    <joint name="J_5" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                    <geom name="G5" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                    <plugin instance="composite"/>
+                    <body name="B_6" pos="0.0394737 0 0">
+                      <joint name="J_6" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                      <geom name="G6" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                      <plugin instance="composite"/>
+                      <body name="B_7" pos="0.0394737 0 0">
+                        <joint name="J_7" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                        <geom name="G7" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                        <plugin instance="composite"/>
+                        <body name="B_8" pos="0.0394737 0 0">
+                          <joint name="J_8" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                          <geom name="G8" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                          <plugin instance="composite"/>
+                          <body name="B_9" pos="0.0394737 0 0">
+                            <joint name="J_9" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                            <geom name="G9" size="0.0045 0.0197369" pos="0.0197369 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                            <plugin instance="composite"/>
+                            <body name="B_10" pos="0.0394737 0 0">
+                              <joint name="J_10" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                              <geom name="G10" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                              <plugin instance="composite"/>
+                              <body name="B_11" pos="0.0394737 0 0">
+                                <joint name="J_11" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                <geom name="G11" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                <plugin instance="composite"/>
+                                <body name="B_12" pos="0.0394737 0 0">
+                                  <joint name="J_12" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                  <geom name="G12" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                  <plugin instance="composite"/>
+                                  <body name="B_13" pos="0.0394737 0 0">
+                                    <joint name="J_13" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                    <geom name="G13" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                    <plugin instance="composite"/>
+                                    <body name="B_14" pos="0.0394737 0 0">
+                                      <joint name="J_14" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                      <geom name="G14" size="0.0045 0.0197369" pos="0.0197369 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                      <plugin instance="composite"/>
+                                      <body name="B_15" pos="0.0394737 0 0">
+                                        <joint name="J_15" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                        <geom name="G15" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                        <plugin instance="composite"/>
+                                        <body name="B_16" pos="0.0394737 0 0">
+                                          <joint name="J_16" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                          <geom name="G16" size="0.0045 0.0197369" pos="0.0197369 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                          <plugin instance="composite"/>
+                                          <body name="B_17" pos="0.0394737 0 0">
+                                            <joint name="J_17" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                            <geom name="G17" size="0.0045 0.0197368" pos="0.0197368 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                            <plugin instance="composite"/>
+                                            <body name="B_last" pos="0.0394737 0 0">
+                                              <joint name="J_last" pos="0 0 0" type="ball" group="3" actuatorfrclimited="false" damping="0.001"/>
+                                              <geom name="G18" size="0.0045 0.0197369" pos="0.0197369 0 0" quat="0.707107 0 -0.707107 0" type="capsule" friction="0.1 0.001 0.001" rgba="0 0 0 1"/>
+                                              <site name="S_last" pos="0.0394737 0 0" group="3"/>
+                                              <plugin instance="composite"/>
+                                            </body>
+                                          </body>
+                                        </body>
+                                      </body>
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="B_first" body2="B_1"/>
+    <exclude body1="B_1" body2="B_2"/>
+    <exclude body1="B_2" body2="B_3"/>
+    <exclude body1="B_3" body2="B_4"/>
+    <exclude body1="B_4" body2="B_5"/>
+    <exclude body1="B_5" body2="B_6"/>
+    <exclude body1="B_6" body2="B_7"/>
+    <exclude body1="B_7" body2="B_8"/>
+    <exclude body1="B_8" body2="B_9"/>
+    <exclude body1="B_9" body2="B_10"/>
+    <exclude body1="B_10" body2="B_11"/>
+    <exclude body1="B_11" body2="B_12"/>
+    <exclude body1="B_12" body2="B_13"/>
+    <exclude body1="B_13" body2="B_14"/>
+    <exclude body1="B_14" body2="B_15"/>
+    <exclude body1="B_15" body2="B_16"/>
+    <exclude body1="B_16" body2="B_17"/>
+  </contact>
+
+</mujoco>

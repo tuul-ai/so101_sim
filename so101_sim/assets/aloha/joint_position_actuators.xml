@@ -1,0 +1,44 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<mujoco>
+  <actuator>
+    <position class="waist" name="left/waist" joint="left/waist"/>
+    <position class="shoulder" name="left/shoulder" joint="left/shoulder"/>
+    <position class="elbow" name="left/elbow" joint="left/elbow"/>
+    <position class="forearm_roll" name="left/forearm_roll" joint="left/forearm_roll"/>
+    <position class="wrist_angle" name="left/wrist_angle" joint="left/wrist_angle"/>
+    <position class="wrist_rotate" name="left/wrist_rotate" joint="left/wrist_rotate"/>
+    <position class="finger" name="left/gripper" joint="left/left_finger"/>
+
+    <position class="waist" name="right/waist" joint="right/waist"/>
+    <position class="shoulder" name="right/shoulder" joint="right/shoulder"/>
+    <position class="elbow" name="right/elbow" joint="right/elbow"/>
+    <position class="forearm_roll" name="right/forearm_roll" joint="right/forearm_roll"/>
+    <position class="wrist_angle" name="right/wrist_angle" joint="right/wrist_angle"/>
+    <position class="wrist_rotate" name="right/wrist_rotate" joint="right/wrist_rotate"/>
+    <position class="finger" name="right/gripper" joint="right/left_finger"/>
+  </actuator>
+
+  <keyframe>
+    <key name="neutral_pose" qpos="
+    0 -0.96 1.16 0 -0.3 0 0.0084 0.0084
+    0 -0.96 1.16 0 -0.3 0 0.0084 0.0084"
+      ctrl="
+    0 -0.96 1.16 0 -0.3 0 0.0084
+    0 -0.96 1.16 0 -0.3 0 0.0084"/>
+  </keyframe>
+</mujoco>

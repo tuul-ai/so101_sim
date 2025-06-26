@@ -1,0 +1,11 @@
+absl-py
+dm-control>=1.0.31
+dm-env>=1.6
+grpcio
+immutabledict
+mediapy
+mujoco>=3.3.3
+numpy
+pillow
+rich
+# safari-sdk>=2.4.0  # Linux-only dependency - commented out for macOS compatibility

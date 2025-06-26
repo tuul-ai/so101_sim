@@ -1,0 +1,87 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<mujoco model="google_64k scene">
+  <compiler assetdir="assets"/>
+
+  <statistic center="0 -0.1 0.2" extent="0.6" meansize="0.05"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.6 0.6 0.6" specular="0 0 0" active="1"/>
+  </visual>
+
+  <include file="aloha_pbr.xml"/>
+
+  <asset>
+    <texture type="skybox" file="aloha_6_raw_skybox_1024x768_flipped.png" gridsize="3 4" gridlayout=".U..LFRB.D.."/>
+    <material name="black" rgba="0.0 0.0 0.0 1"/>
+
+    <texture name="table_top_rgb" file="table_top/1k_textures/table_top_BaseColor.png" type="2d"/>
+    <texture name="table_top_orm" file="table_top/1k_textures/table_top_ORM.png" type="2d"/>
+    <texture name="table_top_normal" file = "table_top/1k_textures/table_top_Normal.png" type="2d"/>
+    <material name="table_top_material">
+      <layer role="rgb" texture="table_top_rgb"/>
+      <layer role="orm" texture="table_top_orm"/>
+      <layer role="normal" texture="table_top_normal"/>
+    </material>
+
+    <texture name="extrusion_rgb" file="cell_extrusions/materials/1k_textures/extrusions_BaseColor.png" type="2d"/>
+    <texture name="extrusion_orm" file="cell_extrusions/materials/1k_textures/extrusions_ORM.png" type="2d"/>
+    <texture name="extrusion_normal" file = "cell_extrusions/materials/1k_textures/extrusions_Normal.png" type="2d"/>
+    <material name="extrusion_material">
+      <layer role="rgb" texture="extrusion_rgb"/>
+      <layer role="orm" texture="extrusion_orm"/>
+      <layer role="normal" texture="extrusion_normal"/>
+    </material>
+
+    <!-- table extrusions and frame -->
+    <mesh file="cell_extrusions/cell_extrusions.obj"/>
+    <mesh file="aloha_mapped_mesh/overhead_mount.obj"/>
+    <mesh file="aloha_mapped_mesh/wormseye_mount.obj"/>
+
+    <!-- Table dimensions (length x width x height in meters): 1.21x0.76x0.75 -->
+    <mesh file="tablelegs.obj"/>
+    <mesh file="table_top/table_mesh_mapped.obj"/>
+  </asset>
+
+   <default>
+    <default class="frame">
+      <geom group="1" type="mesh" material="extrusion_material"/>
+    </default>
+  </default>
+
+  <worldbody>
+    <body name="table" pos="0 0 -0.732">
+      <site name="worldref"/>
+      <geom mesh="table_mesh_mapped" material="table_top_material" class="visual" quat="1 0 0 1"/>
+      <geom class="frame" mesh="tablelegs" quat="1 0 0 1"/>
+      <geom name="table" pos="0 0 0.6509" size="0.61 0.381 0.1" type="box" class="collision"/>
+    </body>
+
+    <camera name="overhead_cam" focal="1.93e-3 1.93e-3" resolution="1280 720" sensorsize="3896e-6 2140e-6"
+            pos="0 -0.303794 1.02524" mode="fixed" quat="0.976332 0.216277 0 0"/>
+    <camera name="worms_eye_cam" focal="1.93e-3 1.93e-3" resolution="1280 720" sensorsize="3896e-6 2140e-6"
+            pos="0 -0.377167 0.0506055" mode="fixed" quat="0.672659 0.739953 0 0"/>
+
+    <geom class="visual" material="extrusion_material" pos="0 -0.402 0.031" quat="1 1 0 0"  mesh="cell_extrusions"/>
+    <geom class="frame" pos="0 -0.303794 1.02524" quat="0 0 0.976296 0.21644" mesh="d405_solid"/>
+    <geom class="frame" pos="0 -0.377167 0.0316055" quat="0 0 -0.672367 -0.740218" mesh="d405_solid"/>
+    <geom class="frame" pos="0 -0.351 1.03" quat="0 0 1 1" mesh="overhead_mount"/>
+    <geom class="frame" pos="0 -0.391 -0.01" quat="0 0 0 1" mesh="wormseye_mount"/>
+  </worldbody>
+</mujoco>
+
+

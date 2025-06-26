@@ -1,0 +1,95 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<mujoco model="marker">
+  <compiler assetdir="meshes" texturedir="materials"/>
+
+  <asset>
+    <texture type="2d" name="marker_texture" file="4k_textures/marker_4k_BaseColor.png"/>
+    <material name="marker_texture" texture="marker_texture"/>
+
+    <mesh file="marker.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_001.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_002.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_003.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_004.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_005.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_006.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_007.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_008.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_009.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_010.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_011.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_012.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_013.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_014.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_015.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_016.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_001.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_002.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_003.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_004.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_005.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_006.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_007.obj" scale = "1 1 1"/>
+    <mesh file="marker_collision_high_friction_008.obj" scale = "1 1 1"/>
+  </asset>
+
+  <default>
+    <default class="marker">
+      <default class="visual_marker">
+        <geom type="mesh" group="2" density="200" contype="0" conaffinity="0" material="marker_texture"/>
+      </default>
+      <default class="collision_marker">
+        <geom type="mesh" group="3" density="0" solref=".004 1" friction="1.0 0.01 0.01" condim="6"/>
+      </default>
+      <default class="collision_marker_high_friction">
+        <geom type="mesh" group="4" density="0" solref=".004 1" friction="0.5 0.01 0.01" solimp="0.99 0.99 0.01" condim="6"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body childclass="marker" pos="0 0 0.01">
+      <freejoint/>
+      <geom class="visual_marker" mesh="marker" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_001" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_002" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_003" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_004" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_005" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_006" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_007" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_008" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_009" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_010" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_011" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_012" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_013" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_014" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_015" euler="0 90 90"/>
+      <geom class="collision_marker" mesh="marker_collision_016" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_001" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_002" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_003" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_004" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_005" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_006" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_007" euler="0 90 90"/>
+      <geom class="collision_marker_high_friction" mesh="marker_collision_high_friction_008" euler="0 90 90"/>
+    </body>
+  </worldbody>
+</mujoco>

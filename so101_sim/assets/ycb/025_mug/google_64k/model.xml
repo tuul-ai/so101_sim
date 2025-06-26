@@ -1,0 +1,198 @@
+<!--
+Copyright 2015 YCB Authors
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+    Share: Copy and redistribute the material in any medium or format.
+    Adapt: Remix, transform, and build upon the material for any purpose,
+          even commercially.
+
+Under the following terms:
+    Attribution: You must give appropriate credit, provide a link to the license,
+                  and indicate if changes were made. You may do so in any reasonable
+                  manner, but not in any way that suggests the licensor endorses you or
+                  your use.
+
+No additional restrictions: You may not apply legal terms or technological measures
+                            that legally restrict others from doing anything the
+                            license permits.
+-->
+
+<mujoco model="025_mug">
+  <compiler meshdir="meshes" texturedir="materials"/>
+
+  <asset>
+    <texture type="2d" name="texture" file="texture_map.png"/>
+    <material name="texture" texture="texture"/>
+
+    <mesh file="textured.obj"/>
+    <mesh file="coacd_part_000.obj"/>
+    <mesh file="coacd_part_001.obj"/>
+    <mesh file="coacd_part_002.obj"/>
+    <mesh file="coacd_part_003.obj"/>
+    <mesh file="coacd_part_004.obj"/>
+    <mesh file="coacd_part_005.obj"/>
+    <mesh file="coacd_part_006.obj"/>
+    <mesh file="coacd_part_007.obj"/>
+    <mesh file="coacd_part_008.obj"/>
+    <mesh file="coacd_part_009.obj"/>
+    <mesh file="coacd_part_010.obj"/>
+    <mesh file="coacd_part_011.obj"/>
+    <mesh file="coacd_part_012.obj"/>
+    <mesh file="coacd_part_013.obj"/>
+    <mesh file="coacd_part_014.obj"/>
+    <mesh file="coacd_part_015.obj"/>
+    <mesh file="coacd_part_016.obj"/>
+    <mesh file="coacd_part_017.obj"/>
+    <mesh file="coacd_part_018.obj"/>
+    <mesh file="coacd_part_019.obj"/>
+    <mesh file="coacd_part_020.obj"/>
+    <mesh file="coacd_part_021.obj"/>
+    <mesh file="coacd_part_022.obj"/>
+    <mesh file="coacd_part_023.obj"/>
+    <mesh file="coacd_part_024.obj"/>
+    <mesh file="coacd_part_025.obj"/>
+    <mesh file="coacd_part_026.obj"/>
+    <mesh file="coacd_part_027.obj"/>
+    <mesh file="coacd_part_028.obj"/>
+    <mesh file="coacd_part_029.obj"/>
+    <mesh file="coacd_part_030.obj"/>
+    <mesh file="coacd_part_031.obj"/>
+    <mesh file="coacd_part_032.obj"/>
+    <mesh file="coacd_part_033.obj"/>
+    <mesh file="coacd_part_034.obj"/>
+    <mesh file="coacd_part_035.obj"/>
+    <mesh file="coacd_part_036.obj"/>
+    <mesh file="coacd_part_037.obj"/>
+    <mesh file="coacd_part_038.obj"/>
+    <mesh file="coacd_part_039.obj"/>
+    <mesh file="coacd_part_040.obj"/>
+    <mesh file="coacd_part_041.obj"/>
+    <mesh file="coacd_part_042.obj"/>
+    <mesh file="coacd_part_043.obj"/>
+    <mesh file="coacd_part_044.obj"/>
+    <mesh file="coacd_part_045.obj"/>
+    <mesh file="coacd_part_046.obj"/>
+    <mesh file="coacd_part_047.obj"/>
+    <mesh file="coacd_part_048.obj"/>
+    <mesh file="coacd_part_049.obj"/>
+    <mesh file="coacd_part_050.obj"/>
+    <mesh file="coacd_part_051.obj"/>
+    <mesh file="coacd_part_052.obj"/>
+    <mesh file="coacd_part_053.obj"/>
+    <mesh file="coacd_part_054.obj"/>
+    <mesh file="coacd_part_055.obj"/>
+    <mesh file="coacd_part_056.obj"/>
+    <mesh file="coacd_part_057.obj"/>
+    <mesh file="coacd_part_058.obj"/>
+    <mesh file="coacd_part_059.obj"/>
+    <mesh file="coacd_part_060.obj"/>
+    <mesh file="coacd_part_061.obj"/>
+    <mesh file="coacd_part_062.obj"/>
+    <mesh file="coacd_part_063.obj"/>
+    <mesh file="coacd_part_064.obj"/>
+    <mesh file="coacd_part_065.obj"/>
+    <mesh file="coacd_part_066.obj"/>
+    <mesh file="coacd_part_067.obj"/>
+    <mesh file="coacd_part_068.obj"/>
+    <mesh file="coacd_part_069.obj"/>
+    <mesh file="coacd_part_070.obj"/>
+    <mesh file="coacd_part_071.obj"/>
+    <mesh file="coacd_part_072.obj"/>
+    <mesh file="coacd_part_073.obj"/>
+  </asset>
+
+  <default>
+    <default class="025_mug">
+      <default class="visual_025_mug">
+        <geom type="mesh" group="2" density="200" contype="0" conaffinity="0" material="texture"/>
+      </default>
+      <default class="collision_025_mug">
+        <geom type="mesh" group="3" mass="0" density="0" solref=".004 1" friction="1.0 0.01 0.01" condim="6"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body childclass="025_mug" pos="0 0 0.1">
+      <freejoint/>
+      <geom class="visual_025_mug" mesh="textured"/>
+      <geom class="collision_025_mug" mesh="coacd_part_000" rgba="0.375 0.95 0.73 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_001" rgba="0.599 0.16 0.16 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_002" rgba="0.058 0.87 0.60 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_003" rgba="0.708 0.02 0.97 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_004" rgba="0.832 0.21 0.18 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_005" rgba="0.183 0.30 0.52 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_006" rgba="0.432 0.29 0.61 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_007" rgba="0.139 0.29 0.37 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_008" rgba="0.456 0.79 0.20 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_009" rgba="0.514 0.59 0.05 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_010" rgba="0.608 0.17 0.07 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_011" rgba="0.949 0.97 0.81 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_012" rgba="0.305 0.10 0.68 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_013" rgba="0.440 0.12 0.50 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_014" rgba="0.034 0.91 0.26 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_015" rgba="0.663 0.31 0.52 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_016" rgba="0.547 0.18 0.97 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_017" rgba="0.775 0.94 0.89 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_018" rgba="0.598 0.92 0.09 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_019" rgba="0.196 0.05 0.33 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_020" rgba="0.389 0.27 0.83 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_021" rgba="0.357 0.28 0.54 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_022" rgba="0.141 0.80 0.07 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_023" rgba="0.987 0.77 0.20 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_024" rgba="0.006 0.82 0.71 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_025" rgba="0.729 0.77 0.07 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_026" rgba="0.358 0.12 0.86 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_027" rgba="0.623 0.33 0.06 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_028" rgba="0.311 0.33 0.73 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_029" rgba="0.638 0.89 0.47 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_030" rgba="0.120 0.71 0.76 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_031" rgba="0.561 0.77 0.49 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_032" rgba="0.523 0.43 0.03 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_033" rgba="0.108 0.03 0.64 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_034" rgba="0.314 0.51 0.91 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_035" rgba="0.249 0.41 0.76 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_036" rgba="0.229 0.08 0.29 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_037" rgba="0.161 0.93 0.81 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_038" rgba="0.633 0.87 0.80 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_039" rgba="0.187 0.89 0.54 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_040" rgba="0.807 0.90 0.32 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_041" rgba="0.110 0.23 0.43 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_042" rgba="0.818 0.86 0.01 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_043" rgba="0.511 0.42 0.22 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_044" rgba="0.120 0.34 0.94 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_045" rgba="0.323 0.52 0.70 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_046" rgba="0.364 0.97 0.96 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_047" rgba="0.252 0.50 0.30 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_048" rgba="0.285 0.04 0.61 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_049" rgba="0.503 0.05 0.28 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_050" rgba="0.908 0.24 0.14 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_051" rgba="0.489 0.99 0.24 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_052" rgba="0.672 0.76 0.24 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_053" rgba="0.728 0.37 0.63 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_054" rgba="0.634 0.54 0.09 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_055" rgba="0.835 0.32 0.19 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_056" rgba="0.041 0.59 0.68 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_057" rgba="0.017 0.51 0.23 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_058" rgba="0.645 0.17 0.69 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_059" rgba="0.387 0.94 0.14 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_060" rgba="0.341 0.11 0.92 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_061" rgba="0.877 0.26 0.66 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_062" rgba="0.817 0.56 0.53 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_063" rgba="0.242 0.09 0.90 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_064" rgba="0.900 0.63 0.34 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_065" rgba="0.349 0.73 0.90 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_066" rgba="0.887 0.78 0.64 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_067" rgba="0.084 0.16 0.90 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_068" rgba="0.606 0.01 0.10 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_069" rgba="0.664 0.01 0.16 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_070" rgba="0.549 0.69 0.65 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_071" rgba="0.224 0.71 0.24 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_072" rgba="0.325 0.75 0.65 1"/>
+      <geom class="collision_025_mug" mesh="coacd_part_073" rgba="0.849 0.66 0.57 1"/>
+    </body>
+  </worldbody>
+</mujoco>

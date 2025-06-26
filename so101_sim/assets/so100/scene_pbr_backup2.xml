@@ -1,0 +1,152 @@
+<!--
+Improved SO100 Scene - Better visual representation
+-->
+
+<mujoco model="so100_improved">
+  <compiler angle="radian" autolimits="true"/>
+  
+  <option cone="elliptic" impratio="10"/>
+  
+  <asset>
+    <material name="table_material" rgba="0.8 0.6 0.4 1.0"/>
+    <material name="floor_material" rgba="0.3 0.3 0.3 1.0"/>
+    <material name="so100_base" rgba="0.2 0.2 0.2 1.0"/>
+    <material name="so100_arm" rgba="0.7 0.7 0.7 1.0"/>
+    <material name="so100_joint" rgba="0.4 0.4 0.4 1.0"/>
+    <material name="gripper_material" rgba="0.9 0.9 0.1 1.0"/>
+  </asset>
+
+  <default>
+    <default class="so100">
+      <joint axis="0 0 1" actuatorfrcrange="-50 50"/>
+      <site group="4"/>
+      <default class="visual">
+        <geom contype="0" conaffinity="0" density="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global offwidth="640" offheight="480"/>
+  </visual>
+  
+  <worldbody>
+    <!-- Lighting -->
+    <light name="top_light" pos="0 0 2" dir="0 0 -1" diffuse="0.8 0.8 0.8" ambient="0.2 0.2 0.2"/>
+    <light name="side_light1" pos="1 1 1.5" dir="-1 -1 -1" diffuse="0.4 0.4 0.4"/>
+    <light name="side_light2" pos="-1 1 1.5" dir="1 -1 -1" diffuse="0.4 0.4 0.4"/>
+    
+    <!-- Floor -->
+    <geom name="floor" type="plane" size="3 3 0.1" material="floor_material" friction="1 0.005 0.0001"/>
+    
+    <!-- Table -->
+    <body name="table" pos="0 0 0.4">
+      <geom name="table_top" type="box" size="0.5 0.4 0.02" pos="0 0 0" material="table_material"/>
+      <!-- Table legs -->
+      <geom name="leg1" type="cylinder" size="0.02 0.2" pos="0.45 0.35 -0.2" material="table_material"/>
+      <geom name="leg2" type="cylinder" size="0.02 0.2" pos="0.45 -0.35 -0.2" material="table_material"/>
+      <geom name="leg3" type="cylinder" size="0.02 0.2" pos="-0.45 0.35 -0.2" material="table_material"/>
+      <geom name="leg4" type="cylinder" size="0.02 0.2" pos="-0.45 -0.35 -0.2" material="table_material"/>
+    </body>
+    
+    <!-- Cameras -->
+    <camera name="overhead_cam" pos="0 0 1.5" xyaxes="1 0 0 0 1 0" fovy="45"/>
+    <camera name="worms_eye_cam" pos="0 0 0.1" xyaxes="1 0 0 0 0 1" fovy="45"/>
+    <camera name="side_cam" pos="1.2 0.8 0.8" xyaxes="-0.8 0.6 0 -0.36 -0.48 0.8" fovy="45"/>
+    
+    <!-- Improved SO100 ARM - Using better geometric shapes -->
+    <body name="so100/base_link" childclass="so100" pos="0 0 0.42">
+      <inertial pos="0 0 0.05" mass="2.0" diaginertia="0.01 0.01 0.01"/>
+      <!-- Better base: cylinder instead of box -->
+      <geom name="base_visual" class="visual" type="cylinder" size="0.06 0.04" pos="0 0 0.04" material="so100_base"/>
+      <geom name="base_collision" class="collision" type="cylinder" size="0.06 0.04" pos="0 0 0.04"/>
+      
+      <body name="so100/shoulder_link" pos="0 0 0.08">
+        <inertial pos="0 0 0.05" mass="1.5" diaginertia="0.005 0.005 0.005"/>
+        <joint name="so100/rotation" axis="0 0 1" range="-3.14159 3.14159" damping="5.0" actuatorfrcrange="-50 50"/>
+        <!-- Joint housing -->
+        <geom name="shoulder_visual" class="visual" type="cylinder" size="0.04 0.03" pos="0 0 0.03" material="so100_joint"/>
+        <geom name="shoulder_collision" class="collision" type="cylinder" size="0.04 0.03" pos="0 0 0.03"/>
+        
+        <body name="so100/upper_arm_link" pos="0 0 0.06">
+          <inertial pos="0 0 0.1" mass="1.2" diaginertia="0.01 0.01 0.002"/>
+          <joint name="so100/pitch" axis="0 1 0" range="-1.57 1.57" damping="10.0" actuatorfrcrange="-50 50"/>
+          <!-- Upper arm: elongated capsule -->
+          <geom name="upper_arm_visual" class="visual" type="capsule" size="0.025" fromto="0 0 0 0 0 0.2" material="so100_arm"/>
+          <geom name="upper_arm_collision" class="collision" type="capsule" size="0.025" fromto="0 0 0 0 0 0.2"/>
+          
+          <body name="so100/forearm_link" pos="0 0 0.2">
+            <inertial pos="0 0 0.08" mass="0.8" diaginertia="0.005 0.005 0.001"/>
+            <joint name="so100/elbow" axis="0 1 0" range="-2.0 2.0" damping="8.0" actuatorfrcrange="-50 50"/>
+            <!-- Elbow joint -->
+            <geom name="elbow_joint" class="visual" type="sphere" size="0.03" pos="0 0 0" material="so100_joint"/>
+            <!-- Forearm: smaller capsule -->
+            <geom name="forearm_visual" class="visual" type="capsule" size="0.02" fromto="0 0 0 0 0 0.16" material="so100_arm"/>
+            <geom name="forearm_collision" class="collision" type="capsule" size="0.02" fromto="0 0 0 0 0 0.16"/>
+            
+            <body name="so100/wrist_link" pos="0 0 0.16">
+              <inertial pos="0 0 0.03" mass="0.4" diaginertia="0.001 0.001 0.001"/>
+              <joint name="so100/wrist_pitch" axis="0 1 0" range="-1.57 1.57" damping="5.0" actuatorfrcrange="-50 50"/>
+              <!-- Wrist assembly -->
+              <geom name="wrist_visual" class="visual" type="cylinder" size="0.025 0.03" pos="0 0 0.03" material="so100_joint"/>
+              <geom name="wrist_collision" class="collision" type="cylinder" size="0.025 0.03" pos="0 0 0.03"/>
+              
+              <body name="so100/hand_link" pos="0 0 0.06">
+                <inertial pos="0 0 0.02" mass="0.2" diaginertia="0.0005 0.0005 0.0005"/>
+                <joint name="so100/wrist_roll" axis="1 0 0" range="-3.14159 3.14159" damping="2.0" actuatorfrcrange="-50 50"/>
+                <!-- Hand/gripper mount -->
+                <geom name="hand_visual" class="visual" type="box" size="0.02 0.03 0.02" pos="0 0 0.02" material="so100_arm"/>
+                <geom name="hand_collision" class="collision" type="box" size="0.02 0.03 0.02" pos="0 0 0.02"/>
+                
+                <site name="so100/gripper" pos="0 0 0.04" group="5"/>
+                
+                <!-- Improved gripper fingers -->
+                <body name="so100/gripper_left" pos="0.015 0 0.04">
+                  <inertial pos="0 0 0.015" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+                  <joint name="so100/jaw_left" axis="-1 0 0" range="0 0.04" damping="1.0" actuatorfrcrange="-50 50"/>
+                  <!-- Finger shape -->
+                  <geom name="gripper_left_visual" class="visual" type="box" size="0.003 0.008 0.02" material="gripper_material"/>
+                  <geom name="gripper_left_collision" class="collision" type="box" size="0.003 0.008 0.02"/>
+                </body>
+                
+                <body name="so100/gripper_right" pos="-0.015 0 0.04">
+                  <inertial pos="0 0 0.015" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+                  <joint name="so100/jaw_right" axis="1 0 0" range="0 0.04" damping="1.0" actuatorfrcrange="-50 50"/>
+                  <!-- Finger shape -->
+                  <geom name="gripper_right_visual" class="visual" type="box" size="0.003 0.008 0.02" material="gripper_material"/>
+                  <geom name="gripper_right_collision" class="collision" type="box" size="0.003 0.008 0.02"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="so100/base_link" body2="so100/shoulder_link"/>
+  </contact>
+
+  <equality>
+    <joint joint1="so100/jaw_left" joint2="so100/jaw_right" polycoef="0 -1 0 0 0"/>
+  </equality>
+
+  <actuator>
+    <position name="so100/rotation_actuator" joint="so100/rotation" ctrlrange="-3.14159 3.14159" kp="50"/>
+    <position name="so100/pitch_actuator" joint="so100/pitch" ctrlrange="-1.57 1.57" kp="100"/>
+    <position name="so100/elbow_actuator" joint="so100/elbow" ctrlrange="-2.0 2.0" kp="80"/>
+    <position name="so100/wrist_pitch_actuator" joint="so100/wrist_pitch" ctrlrange="-1.57 1.57" kp="40"/>
+    <position name="so100/wrist_roll_actuator" joint="so100/wrist_roll" ctrlrange="-3.14159 3.14159" kp="20"/>
+    <position name="so100/jaw_actuator" joint="so100/jaw_left" ctrlrange="0 0.04" kp="100"/>
+  </actuator>
+
+  <keyframe>
+    <key name="neutral_pose" qpos="0 -0.5 1.0 -0.5 0.0 0.02 0.02"/>
+  </keyframe>
+</mujoco>

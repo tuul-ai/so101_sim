@@ -1,0 +1,74 @@
+<!--
+Copyright 2022 Google LLC
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+    Share: Copy and redistribute the material in any medium or format.
+    Adapt: Remix, transform, and build upon the material for any purpose,
+          even commercially.
+
+Under the following terms:
+    Attribution: You must give appropriate credit, provide a link to the license,
+                  and indicate if changes were made. You may do so in any reasonable
+                  manner, but not in any way that suggests the licensor endorses you or
+                  your use.
+
+No additional restrictions: You may not apply legal terms or technological measures
+                            that legally restrict others from doing anything the
+                            license permits.
+-->
+
+<mujoco model="Diamond_Visions_Scissors_Red">
+  <compiler assetdir="meshes" texturedir="materials/textures"/>
+
+  <asset>
+    <texture type="2d" name="texture" file="texture.png"/>
+    <material name="texture" texture="texture"/>
+
+    <mesh file="model.obj"/>
+    <mesh file="coacd_part_000.obj"/>
+    <mesh file="coacd_part_001.obj"/>
+    <mesh file="coacd_part_002.obj"/>
+    <mesh file="coacd_part_003.obj"/>
+    <mesh file="coacd_part_004.obj"/>
+    <mesh file="coacd_part_005.obj"/>
+    <mesh file="coacd_part_006.obj"/>
+    <mesh file="coacd_part_007.obj"/>
+    <mesh file="coacd_part_008.obj"/>
+    <mesh file="coacd_part_009.obj"/>
+    <mesh file="coacd_part_010.obj"/>
+    <mesh file="coacd_part_011.obj"/>
+  </asset>
+
+  <default>
+    <default class="Diamond_Visions_Scissors_Red">
+      <default class="visual_Diamond_Visions_Scissors_Red">
+        <geom type="mesh" group="2" density="200" contype="0" conaffinity="0" material="texture"/>
+      </default>
+      <default class="collision_Diamond_Visions_Scissors_Red">
+        <geom type="mesh" group="3" mass="0" density="0" solref=".004 1" friction="1.0 0.01 0.01" condim="6"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body childclass="Diamond_Visions_Scissors_Red" pos="0 0 0.1">
+      <freejoint/>
+      <geom class="visual_Diamond_Visions_Scissors_Red" mesh="model"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_000" rgba="0.375 0.95 0.73 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_001" rgba="0.599 0.16 0.16 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_002" rgba="0.058 0.87 0.60 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_003" rgba="0.708 0.02 0.97 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_004" rgba="0.832 0.21 0.18 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_005" rgba="0.183 0.30 0.52 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_006" rgba="0.432 0.29 0.61 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_007" rgba="0.139 0.29 0.37 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_008" rgba="0.456 0.79 0.20 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_009" rgba="0.514 0.59 0.05 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_010" rgba="0.608 0.17 0.07 1"/>
+      <geom class="collision_Diamond_Visions_Scissors_Red" mesh="coacd_part_011" rgba="0.949 0.97 0.81 1"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,58 @@
+<!--
+Copyright 2015 YCB Authors
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+    Share: Copy and redistribute the material in any medium or format.
+    Adapt: Remix, transform, and build upon the material for any purpose,
+          even commercially.
+
+Under the following terms:
+    Attribution: You must give appropriate credit, provide a link to the license,
+                  and indicate if changes were made. You may do so in any reasonable
+                  manner, but not in any way that suggests the licensor endorses you or
+                  your use.
+
+No additional restrictions: You may not apply legal terms or technological measures
+                            that legally restrict others from doing anything the
+                            license permits.
+-->
+
+<mujoco model="011_banana">
+  <compiler meshdir="meshes" texturedir="materials"/>
+
+  <asset>
+    <texture type="2d" name="texture" file="texture_map.png"/>
+    <material name="texture" texture="texture"/>
+
+    <mesh file="textured.obj"/>
+    <mesh file="coacd_part_000.obj"/>
+    <mesh file="coacd_part_001.obj"/>
+    <mesh file="coacd_part_002.obj"/>
+    <mesh file="coacd_part_003.obj"/>
+  </asset>
+
+  <default>
+    <default class="011_banana">
+      <default class="visual_011_banana">
+        <geom type="mesh" group="2" density="200" contype="0" conaffinity="0" material="texture"/>
+      </default>
+      <default class="collision_011_banana">
+        <geom type="mesh" group="3" mass="0" density="0" solref=".004 1" friction="1.0 0.01 0.01" condim="6"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body childclass="011_banana">
+      <freejoint/>
+      <geom class="visual_011_banana" mesh="textured"/>
+      <geom class="collision_011_banana" mesh="coacd_part_000" rgba="0.375 0.95 0.73 1"/>
+      <geom class="collision_011_banana" mesh="coacd_part_001" rgba="0.599 0.16 0.16 1"/>
+      <geom class="collision_011_banana" mesh="coacd_part_002" rgba="0.058 0.87 0.60 1"/>
+      <geom class="collision_011_banana" mesh="coacd_part_003" rgba="0.708 0.02 0.97 1"/>
+    </body>
+  </worldbody>
+</mujoco>

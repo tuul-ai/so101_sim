@@ -1,0 +1,143 @@
+<!--
+Copyright 2025 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<mujoco model="so100_arm">
+  <compiler angle="radian" autolimits="true"/>
+
+  <option cone="elliptic" impratio="10"/>
+
+  <asset>
+    <!-- Basic materials for SO100 -->
+    <material name="so100_material" rgba="0.7 0.7 0.7 1.0"/>
+    <material name="gripper_material" rgba="0.3 0.3 0.3 1.0"/>
+  </asset>
+
+  <default>
+    <default class="so100">
+      <joint axis="0 0 1" actuatorfrcrange="-50 50"/>
+      <site group="4"/>
+      <default class="rotation">
+        <joint axis="0 0 1" range="-3.14159 3.14159" damping="5.0"/>
+        <position ctrlrange="-3.14159 3.14159" kp="50"/>
+      </default>
+      <default class="pitch">
+        <joint axis="0 1 0" range="-1.57 1.57" damping="10.0"/>
+        <position ctrlrange="-1.57 1.57" kp="100"/>
+      </default>
+      <default class="elbow">
+        <joint axis="0 1 0" range="-2.0 2.0" damping="8.0"/>
+        <position ctrlrange="-2.0 2.0" kp="80"/>
+      </default>
+      <default class="wrist_pitch">
+        <joint axis="0 1 0" range="-1.57 1.57" damping="5.0"/>
+        <position ctrlrange="-1.57 1.57" kp="40"/>
+      </default>
+      <default class="wrist_roll">
+        <joint axis="1 0 0" range="-3.14159 3.14159" damping="2.0"/>
+        <position ctrlrange="-3.14159 3.14159" kp="20"/>
+      </default>
+      <default class="jaw">
+        <joint axis="0 0 1" range="0 0.08" damping="1.0"/>
+        <position ctrlrange="0 0.08" kp="100"/>
+      </default>
+      <default class="visual">
+        <geom type="box" contype="0" conaffinity="0" density="0" group="2" material="so100_material"/>
+      </default>
+      <default class="collision">
+        <geom group="3" type="box"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <camera name="so100_pov" pos="0 -1.0 0.5" xyaxes="1 0 0 0 0.5 0.8"/>
+    <camera name="so100_top" pos="0 0 1.2" xyaxes="1 0 0 0 1 0"/>
+
+    <body name="so100/base_link" childclass="so100" pos="0 0 0">
+      <inertial pos="0 0 0.05" mass="2.0" diaginertia="0.01 0.01 0.01"/>
+      <geom name="base_visual" class="visual" size="0.05 0.05 0.05" pos="0 0 0.05"/>
+      <geom name="base_collision" class="collision" size="0.05 0.05 0.05" pos="0 0 0.05"/>
+      
+      <body name="so100/shoulder_link" pos="0 0 0.1">
+        <inertial pos="0 0 0.05" mass="1.5" diaginertia="0.005 0.005 0.005"/>
+        <joint name="so100/rotation" class="rotation"/>
+        <geom name="shoulder_visual" class="visual" size="0.04 0.04 0.05" pos="0 0 0.05"/>
+        <geom name="shoulder_collision" class="collision" size="0.04 0.04 0.05" pos="0 0 0.05"/>
+        
+        <body name="so100/upper_arm_link" pos="0 0 0.1">
+          <inertial pos="0 0 0.1" mass="1.2" diaginertia="0.01 0.01 0.002"/>
+          <joint name="so100/pitch" class="pitch"/>
+          <geom name="upper_arm_visual" class="visual" size="0.03 0.03 0.1" pos="0 0 0.1"/>
+          <geom name="upper_arm_collision" class="collision" size="0.03 0.03 0.1" pos="0 0 0.1"/>
+          
+          <body name="so100/forearm_link" pos="0 0 0.2">
+            <inertial pos="0 0 0.08" mass="0.8" diaginertia="0.005 0.005 0.001"/>
+            <joint name="so100/elbow" class="elbow"/>
+            <geom name="forearm_visual" class="visual" size="0.025 0.025 0.08" pos="0 0 0.08"/>
+            <geom name="forearm_collision" class="collision" size="0.025 0.025 0.08" pos="0 0 0.08"/>
+            
+            <body name="so100/wrist_link" pos="0 0 0.16">
+              <inertial pos="0 0 0.03" mass="0.4" diaginertia="0.001 0.001 0.001"/>
+              <joint name="so100/wrist_pitch" class="wrist_pitch"/>
+              <geom name="wrist_visual" class="visual" size="0.02 0.02 0.03" pos="0 0 0.03"/>
+              <geom name="wrist_collision" class="collision" size="0.02 0.02 0.03" pos="0 0 0.03"/>
+              
+              <body name="so100/hand_link" pos="0 0 0.06">
+                <inertial pos="0 0 0.02" mass="0.2" diaginertia="0.0005 0.0005 0.0005"/>
+                <joint name="so100/wrist_roll" class="wrist_roll"/>
+                <geom name="hand_visual" class="visual" size="0.015 0.015 0.02" pos="0 0 0.02"/>
+                <geom name="hand_collision" class="collision" size="0.015 0.015 0.02" pos="0 0 0.02"/>
+                
+                <site name="so100/gripper" pos="0 0 0.04" group="5"/>
+                
+                <body name="so100/gripper_left" pos="0.02 0 0.04">
+                  <inertial pos="0 0 0.015" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+                  <joint name="so100/jaw_left" class="jaw"/>
+                  <geom name="gripper_left_visual" class="visual" size="0.005 0.01 0.015" material="gripper_material"/>
+                  <geom name="gripper_left_collision" class="collision" size="0.005 0.01 0.015"/>
+                </body>
+                
+                <body name="so100/gripper_right" pos="-0.02 0 0.04">
+                  <inertial pos="0 0 0.015" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+                  <joint name="so100/jaw_right" class="jaw"/>
+                  <geom name="gripper_right_visual" class="visual" size="0.005 0.01 0.015" material="gripper_material"/>
+                  <geom name="gripper_right_collision" class="collision" size="0.005 0.01 0.015"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="so100/base_link" body2="so100/shoulder_link"/>
+  </contact>
+
+  <equality>
+    <joint joint1="so100/jaw_left" joint2="so100/jaw_right" polycoef="0 1 0 0 0"/>
+  </equality>
+
+  <actuator>
+    <position name="so100/rotation_actuator" joint="so100/rotation" class="rotation"/>
+    <position name="so100/pitch_actuator" joint="so100/pitch" class="pitch"/>
+    <position name="so100/elbow_actuator" joint="so100/elbow" class="elbow"/>
+    <position name="so100/wrist_pitch_actuator" joint="so100/wrist_pitch" class="wrist_pitch"/>
+    <position name="so100/wrist_roll_actuator" joint="so100/wrist_roll" class="wrist_roll"/>
+    <position name="so100/jaw_actuator" joint="so100/jaw_left" class="jaw"/>
+  </actuator>
+</mujoco>
