@@ -4,7 +4,9 @@ import numpy as np
 import inspect
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-
+from IPython import display # Import for in-notebook rendering
+import time
+import sys
 
 def reorder_tensor_dimensions(tensor):
     """
@@ -28,16 +30,27 @@ def heic_to_pil(heic_path: str) -> Image.Image:
     with Image.open(heic_path) as img:
         return img
 
-def tensor_to_pil(tensor: torch.Tensor) -> Image.Image:
-    """Convert a PyTorch tensor to PIL Image"""
-    if len(tensor.shape) == 4:  # Remove batch dimension if present
-        tensor = tensor[0]
-    
-    # Convert from CxHxW to HxWxC
-    if len(tensor.shape) == 3 and tensor.shape[0] == 3:
-        img_array = tensor.permute(1, 2, 0).cpu().numpy()
-    else:
-        img_array = tensor.cpu().numpy()
+def tensor_to_pil(tensor: torch.Tensor | np.ndarray) -> Image.Image:
+    """Convert a PyTorch tensor or numpy array to PIL Image"""
+    # Handle both torch tensors and numpy arrays
+    if isinstance(tensor, torch.Tensor):
+        if len(tensor.shape) == 4:  # Remove batch dimension if present
+            tensor = tensor[0]
+        
+        # Convert from CxHxW to HxWxC
+        if len(tensor.shape) == 3 and tensor.shape[0] == 3:
+            img_array = tensor.permute(1, 2, 0).cpu().numpy()
+        else:
+            img_array = tensor.cpu().numpy()
+    else:  # numpy array
+        if len(tensor.shape) == 4:  # Remove batch dimension if present
+            tensor = tensor[0]
+        
+        # Convert from CxHxW to HxWxC
+        if len(tensor.shape) == 3 and tensor.shape[0] == 3:
+            img_array = np.transpose(tensor, (1, 2, 0))
+        else:
+            img_array = tensor
     
     # Scale to 0-255 if needed
     if img_array.max() <= 1.0:
@@ -130,3 +143,69 @@ def display_images(*images, titles=None, figsize=(15, 10), max_cols=4):
     
     plt.tight_layout()
     plt.show()
+
+class RealtimeRenderer:
+    """
+    A class for real-time rendering of robot observations.
+    Can render in a standalone pop-up window or directly within a Jupyter notebook output.
+    Press 'q' to close the window (standalone mode).
+    """
+    def __init__(self, camera_key: str = 'overhead_cam', title: str = "Robot View", interval: float = 0.03, in_notebook: bool = False):
+        self.camera_key = camera_key
+        self.title = title
+        self.interval = interval
+        self.in_notebook = in_notebook
+        self.frame_count = 0
+        
+        if not self.in_notebook:
+            self.fig, self.ax = plt.subplots(1, 1, figsize=(8, 6))
+            plt.ion()  # Turn on interactive mode
+            plt.show(block=False)
+            self.img_display = None
+
+    def update(self, obs: dict):
+        """
+        Updates the display with the current observation.
+        """
+        if self.camera_key not in obs:
+            print(f"Observation does not contain '{self.camera_key}' image.")
+            return
+
+        current_img = tensor_to_pil(obs[self.camera_key])
+
+        if self.in_notebook:
+            display.clear_output(wait=True) # Clear previous output
+            plt.imshow(current_img)
+            plt.title(f"{self.title} - Frame {self.frame_count}")
+            plt.axis('off')
+            display.display(plt.gcf()) # Display current figure
+            time.sleep(self.interval) # Pause for pacing
+        else:
+            if self.img_display is None:
+                self.img_display = self.ax.imshow(current_img)
+            else:
+                self.img_display.set_data(current_img)
+            self.ax.set_title(f"{self.title} - Frame {self.frame_count}")
+            self.ax.axis('off')  # Hide axes
+            plt.draw()
+            plt.pause(self.interval)
+
+            # Check for 'q' key press to close the window
+            if plt.waitforbuttonpress(timeout=0.001):
+                if plt.gcf().canvas.manager.key_press_handler.key == 'q':
+                    print("'q' pressed. Closing display window.")
+                    self.close()
+                    sys.exit() # Exit the script
+        
+        self.frame_count += 1
+
+    def close(self):
+        """
+        Closes the rendering window or clears notebook output.
+        """
+        if self.in_notebook:
+            display.clear_output(wait=True)
+            print("Notebook rendering cleared.")
+        else:
+            plt.close(self.fig)
+            print("Rendering window closed.")
